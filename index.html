@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etchy-a-Sketchy</title>
+</head>
+<body>
+    <header>
+        <h1>Etchy-a-Sketchy</h1>
+    </header>
+    <p class="draw"></p>
+    <div class="block">
+        <nav class="navigation">
+            <div class="selectSize">
+                <h4>Select Size</h4>
+                <input type="text" name="input-number" id="gridSize">
+                <button class="submitBtn">Submit</button>
+            </div>
+            <hr class="line">
+            <div class="navBtn">
+                <h4>Menu</h4>
+                <button class="black" onclick="setColor('black')">Black</button>
+                <button class="random" onclick="setColor('random')">Random</button>
+                <button class="resetBtn" onclick="resetBoard()">Reset</button>
+            </div>
+        </nav>
+        <div class="container"></div>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
