@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --title-color: #FF9900;
+    --nav: #666666;
+    --neutral: #333333;
+    --bright: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eceaea;
+}
+
+header {
+    background-color: #FF9900;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin: 20px auto;
+    font-size: 3em;
+}
+
+.draw {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 0.8em;
+    color: rgb(231, 71, 71);
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: #666666;
+    width: 300px;
+    height: 500px;
+    margin-right: 20px;
+}
+
+.selectSize {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.selectSize h4 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.selectSize input {
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+button {
+    width: 90%;
+    margin: 0px auto;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: #33333398;
+}
+
+.submitBtn {
+    color: #fff;
+    background-color: #333333;
+}
+
+.line {
+    color: #a5a1a1;
+    border: 1px solid;
+    margin: 20px 30px;
+}
+
+.navBtn {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.navBtn h4 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.black, .random, .resetBtn {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.black {
+    background-color: rgb(29, 28, 28);
+}
+
+.random {
+    background-color: #FF9900;
+}
+
+.resetBtn {
+    background-color: rgb(231, 71, 71);
+}
+
+.container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #a5a1a193;
+}
+
+@media screen and (max-width: 550px){
+
+    .block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation {
+        width: 65%;
+        height: 350px;
+        float: none;
+        margin: 10px auto;
+    }
+
+    .selectSize {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 7px;
+    }
+
+    .selectSize h4 {
+        font-size: 0.9em;
+        padding-bottom: 7px;
+    }
+
+    .selectSize input {
+        width: 70%;
+    }
+
+    .button {
+        width: 70%;
+    }
+
+    .line {
+        margin: 20px 40px;
+    }
+
+    .navBtn {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 0px;
+    }
+
+    .navBtn h4 {
+        font-size: 0.9em;
+    }
+
+    .black, .random, .resetBtn {
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 350px;
+        height: 350px;
+        margin: 0px auto;
+    }
+
+}
